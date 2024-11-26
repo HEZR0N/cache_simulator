@@ -111,8 +111,8 @@ def main():
                 continue
     
     miss_rate = cache_miss / total_rows
-    print(total_rows)
-    print(cache_miss)
+    # print(total_rows)
+    # print(cache_miss)
     print(f'Cache miss rate: {round(100 * cache_miss / total_rows, 2)}%')
 
 if __name__ == "__main__":
