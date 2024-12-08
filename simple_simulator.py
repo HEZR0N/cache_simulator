@@ -113,7 +113,8 @@ def main():
     miss_rate = cache_miss / total_rows
     # print(total_rows)
     # print(cache_miss)
-    print(f'Cache miss rate: {round(100 * cache_miss / total_rows, 2)}%')
+    #print(f'Cache miss rate: {round(100 * cache_miss / total_rows, 2)}%') Only for Python 3.6 or above
+    print('Cache miss rate: {:.2f}%'.format(100 * cache_miss / total_rows)) #Made to support Fox Server
 
 if __name__ == "__main__":
     main()
